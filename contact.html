@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #d0e8f2;
+    }
+    html, body {
+    height: 100%;
+}
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative; /* Required for absolute positioning */
+    }
+
+    .qr-code {
+        flex: 1;
+        text-align: center;
+        position: relative; /* Required for absolute positioning */
+    }
+
+    .steps-of-payment {
+        flex: 1;
+        text-align: center;
+        position: relative; /* Required for absolute positioning */
+    }
+
+    .divider {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #ccc;
+        left: 50%; /* Position in the middle */
+        transform: translateX(-50%); /* Center horizontally */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .upi-id {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .how-to-pay {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #666;
+    }
+    
+.main{
+    width: auto;
+/*    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%); */
+background-color: #d0e8f2;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+.navbar{
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    
+ 
+    
+}
+.icon {
+    float: left; /* Float the container to the left */
+    margin-right: 20px; /* Adjust margin as needed for spacing */
+}
+
+.icon1 img {
+    width: 150px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+
+    
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(15, 1, 1);
+    font-weight: bold;
+    font-size: 20px; /* Adjust font size */
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: rgba(31, 10, 10, 0.5);
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #4b3422;
+}
+
+
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 27px 0 0 0; /* Adjust margin as needed */
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px; /* Add margin between links for spacing */
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #ff7200;
+}
+
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .qr-code,
+        .steps-of-payment {
+            flex: none;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            display: none;
+        }
+    }
+
+
+
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+          
+                <div class="icon1">
+                    <img src="logo .png" alt="Prajakirana charitable trust">
+                </div>  
+                
+            </div>
+           
+
+            <div class="menu">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/home.html">HOME</a></li>
+                    <li><a href="home.html#Services">SERVICE</a></li>
+                    <li><a href="http://127.0.0.1:5500/about.html">ABOUT</a></li>                   
+                    <li><a href="http://127.0.0.1:5500/payment.html">DONATION</a></li>
+                    <li><a href="http://127.0.0.1:5500/gallery2.html">GALLERY</a></li>
+                    <li><a href="http://127.0.0.1:5500/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div> 
+
+       
+
+<div class="container">
+    
+    
+    <div class="steps-of-payment">
+        <h2>Ph no : 7892666797 </h2>
+        <h2>Email: psctbangalore@gmail.com</h2>
+        
+    </div>
+    
+</div>
+<div class='sk-ww-google-reviews' data-embed-id='25370814'></div>
+<script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
+
+
+<br>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <a href="http://127.0.0.1:5500/home.html">HOME |</a> 
+            <a href="home.html#Services">SERVICE |</a>
+            <a href="http://127.0.0.1:5500/about.html">ABOUT |</a>
+            <a href="http://127.0.0.1:5500/payment.html">DONATION |</a>
+            <a href="http://127.0.0.1:5500/gallery2.html">GALLERY |</a>
+            <a href="http://127.0.0.1:5500/contact.html">CONTACT |</a>
+            <a href="https://www.google.com/maps/place/Prajakirana+Seva+Charitable+Trust/@12.8555409,77.4658586,19.97z/data=!4m6!3m5!1s0x3bae47001cdf80eb:0xe7ae29e756947588!8m2!3d12.8559557!4d77.4656544!16s%2Fg%2F11vyhh5zjn?entry=ttu" target="_blank">View On Google Maps</a>
+        <div class="icon">
+          <a href="https://www.facebook.com/prajakiranaseva.charitabletrust.56"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="https://www.instagram.com/social_service_pksctrust"><ion-icon name="logo-instagram"></ion-icon></a>
+        
+          <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

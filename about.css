@@ -1,0 +1,13 @@
+.containerabout {
+    background-color: #ffffff; /* Set your desired about container background color */
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.containerabout img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const links = document.querySelectorAll('a[href^="#"]');
+          links.forEach(link => {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+      
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+      
+              if (targetElement) {
+                const topOffset = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({ top: topOffset, behavior: 'smooth' });
+              }
+            });
+          });
+        });
+      </script>
+      
+</head>
+
+<body>
+
+<div class="main">
+        <div class="navbar">
+            <div class="icon">
+          
+                <div class="icon1">
+                    <img src="logo .png" alt="Prajakirana charitable trust">
+                </div>  
+                
+            </div>
+           
+
+            <div class="menu">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/home.html">HOME</a></li>
+                    <li><a href="#Services">SERVICE</a></li>
+                    <li><a href="http://127.0.0.1:5500/about.html">ABOUT</a></li>                   
+                    <li><a href="http://127.0.0.1:5500/payment.html">DONATION</a></li>
+                    <li><a href="http://127.0.0.1:5500/gallery2.html">GALLERY</a></li>
+                    <li><a href="http://127.0.0.1:5500/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div> 
+        
+        <div class="content">
+            <h1>Prajakirana <br><span>Charitable </span> <br>Trust</h1>
+            <div class="eco-note">
+                <p>Eco-Friendly! </p>
+              </div>
+            <div class="vision-mission">
+                <div class="vision-mission-content">
+                    <h2>Our Vision</h2>
+                    <p class="par" style="color: black;" >Quality education for orphan and poor children, poverty alleviation, environment protection.</p>
+                    <br>
+                    <h2>Our Mission</h2>
+                    <p class="par" style="color: black;">Working with a holistic approach where vulnerable communities are economically sustainable. Children have access to quality education and health. Youth have access to opportunities for higher education and employment. Take care of the elders who are in need and give them enough support to live their life happily.</p>
+                
+                </div>
+            </div>    
+
+            <div class="form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <h2>Reach Us</h2>
+                    <input type="hidden" name="access_key" value="6d3735a6-f060-44ff-91c3-ba272b9348bd">
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="tel" name="mobile_number" placeholder="Enter Phone Number Here">
+                    <button class="btnn"><a href="#">Submit</a></button>
+
+                    <p class="link"><br>
+                    <a href="#"></a> </a></p>
+                    <p class="liw">Also in</p>
+
+                    <div class="icons">
+                        <a href="https://www.facebook.com/prajakiranaseva.charitabletrust.56"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/social_service_pksctrust"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+                    
+                 
+
+                <div class="container" id="Services">
+                    <div class="centered-div">
+                            <div><h style="font-size: 48px; font-weight: bold; margin-left: 310px;color:greenyellow22e; ">Services</h>
+                            </div>
+                    <div class="gallery">
+                        
+                          <img src="childw.png" alt="logo" width="600" height="400">
+                          
+                        </a>
+                        <div class="desc"><p style="font-size: 24px; font-weight: bold">Child Welfare</p><p>Provides free education, accommodation &
+                            food to Orphan and poor children. Rescuing orphan and
+                            vulnerable children. Financial and accessories support to
+                            specially abled and handicapped children.</p></div>
+                    </div>
+                      
+                    <div class="gallery">
+                        
+                          <img src="se.png" alt="logo" width="600" height="400">
+                        </a>
+                        <div class="desc"><p style="font-size: 24px; font-weight: bold">Senior Citizen Welfare</p><p>Provides medicines, wheelchairs,
+                            walking sticks, crutches and medical facilities to senior
+                            citizen. Organizes free health check up camps to senior
+                            citizen. Organizes recreation activities for senior citizen.</p></div>
+                    </div>
+                    <div class="gallery2"> <!-- Change class from "gallery" to "gallery2" -->
+                        <a href="http://127.0.0.1:5500/cowfarm.html">
+                            <img src="cow.png" alt="logo" width="600" height="1000">
+                        </a>
+                        <div class="desc">
+                            <p style="font-size: 24px; font-weight: bold">Gow shala</p><p><br><br>Click the pic for more details ....</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                  <br>
+                  <div class="gallery">
+                        
+                    <img src="dog.jpg" alt="logo" width="600" height="400">
+                    
+                  </a>
+                  <div class="desc"><p style="font-size: 24px; font-weight: bold">Dog care</p><p>We rescue street dogs and provide them proper aid and food,We have built a shelter for dogs.Proper vaccination and care is taken on the man's bestfriend.We encourage everyone to pay a visit to our dog shelter and play with them.
+                      </p></div>
+              </div>
+                      
+                    <div class="gallery">
+                        
+                          <img src="WE.jpg" alt="Northern Lights" width="600" height="400">
+                        </a>
+                        <div class="desc"><p style="font-size: 24px; font-weight: bold">Women Empowerment</p><p>Provides vocational training to
+                            women. Organizes self defence training programme to
+                            women. Health and hygiene awareness drives for women.</p></div>
+                    </div>
+                      
+                    <div class="gallery">
+                        <a href="gallery2.html#labour">
+                          <img src="la.png" alt="Mountains" width="600" height="400">
+                        </a>
+                        </a>
+                        <div class="desc"><p style="font-size: 24px; font-weight: bold">Labour Welfare</p><p>Organizes safety, health and hygiene
+                            awareness programmes to labour. Provides food to migrant
+                            labours. Provides support to migrant labours children’s
+                            education. Helps to labours to get government schemes
+                            benefits.</p></div>
+                    </div>
+                   
+                </div>
+                    </div>
+                    <div id ="abc">
+                        <br> 
+                    </div>
+                    
+                    <div class="founder-section">
+                        <div class="founder-content">
+                            <p>
+                                
+                                “I lost my mother and father in my childhood. I have gone through a lot of difficulties in my life. I have experienced the pain of orphans and difficulties they face in their life. These experiences in my life made me enter into social service. I decided to dedicate my life to the welfare of orphans.”
+                            <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;        -Rahul Gali
+                            </p>
+                        </div>
+                    </div>
+                   
+                 
+    
+        <div>
+            <br>
+            
+        </div>
+                
+   
+   
+   
+        <footer>
+            <div class="footer">
+                <a href="http://127.0.0.1:5500/home.html">HOME |</a> 
+            <a href="#Services">SERVICE |</a>
+            <a href="http://127.0.0.1:5500/about.html">ABOUT |</a>
+            <a href="http://127.0.0.1:5500/payment.html">DONATION |</a>
+            <a href="http://127.0.0.1:5500/gallery2.html">GALLERY |</a>
+            <a href="http://127.0.0.1:5500/contact.html">CONTACT |</a>
+            <a href="https://www.google.com/maps/place/Prajakirana+Seva+Charitable+Trust/@12.8555409,77.4658586,19.97z/data=!4m6!3m5!1s0x3bae47001cdf80eb:0xe7ae29e756947588!8m2!3d12.8559557!4d77.4656544!16s%2Fg%2F11vyhh5zjn?entry=ttu" target="_blank">View On Google Maps</a>
+        <div class="icon">
+            <a href="https://www.facebook.com/prajakiranaseva.charitabletrust.56"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://www.instagram.com/social_service_pksctrust"><ion-icon name="logo-instagram"></ion-icon></a>
+          
+            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+          
+            </div>
+            
+            </div>
+        </footer>
+</div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
